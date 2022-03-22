@@ -1,0 +1,23 @@
+{
+  "name": "it-was-the-90s",
+  "version": "1.0.0",
+  "description": "Group #3 project #2",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/Jasonwesleysmith/it-was-the-90s.git"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/Jasonwesleysmith/it-was-the-90s/issues"
+  },
+  "homepage": "https://github.com/Jasonwesleysmith/it-was-the-90s#readme",
+  "dependencies": {
+    "express": "^4.17.3"
+  }
+}
