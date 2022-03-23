@@ -1,0 +1,3 @@
+DROP DATABASE IF EXISTS it_was_the_90s;
+
+CREATE DATABASE it_was_the_90s;
