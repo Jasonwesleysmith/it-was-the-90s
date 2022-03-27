@@ -19,10 +19,10 @@ Review.init(
               len: [1]
             }
           },
-          user_id: {
+          critic_id: {
             type: DataTypes.INTEGER,
             references: {
-              model: 'user',
+              model: 'critic',
               key: 'id'
             }
           },

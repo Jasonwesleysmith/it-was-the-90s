@@ -10,11 +10,11 @@ Vote.init(
         primaryKey: true,
         autoIncrement: true
       },
-      user_id: {
+      critic_id: {
         type: DataTypes.INTEGER,
         allowNull: false,
         references: {
-          model: 'user',
+          model: 'critic',
           key: 'id'
         }
       },
