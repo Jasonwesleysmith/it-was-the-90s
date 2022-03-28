@@ -1,0 +1,12 @@
+<div class="reviews">
+  {{#each this}}
+    <section class="review">
+      <div>
+        <p>Review by {{critic.id}} on {{created_at}}</p>
+      </div>
+      <div>
+        <p>{{comment_text}}</p>
+      </div>
+    </section>
+  {{/each}}
+</div>
