@@ -75,3 +75,16 @@ router.get('/:id', (req, res) => {
             res.status(500).json(err);
         });
 });
+
+router.post('/', (req, res) => {
+    Movie.create({
+        title: req.body.title,
+        movie_url: req.body.movie_url,
+        critic_id: req.body.critic_id
+    })
+        .then(dbMovieData => res.json(dbMovieData))
+        .catch(err => {
+            console.log(err);
+            res.status(500).json(err);
+        });
+});
