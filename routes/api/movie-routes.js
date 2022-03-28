@@ -88,3 +88,36 @@ router.post('/', (req, res) => {
             res.status(500).json(err);
         });
 });
+
+router.put('/upvote', (req, res) => {
+    Movie.upvote(req.body, { Vote, Review, Critic })
+        .then(updatedVoteData => res.json(updatedVoteData))
+        .catch(err => {
+            console.log(err);
+            res.status(500).json(err);
+        });
+});
+
+router.put('/:id', (req, res) => {
+    Movie.update(
+        {
+            title: req.body.title
+        },
+        {
+            where: {
+                id: req.params.id
+            }
+        }
+    )
+        .then(dbMovieData => {
+            if (!dbMovieData) {
+            res.status(404).json({ message: 'No post found with this id' });
+            return;
+            }
+            res.json(dbMovieData);
+        })
+        .catch(err => {
+            console.log(err);
+            res.status(500).json(err);
+        });    
+});
