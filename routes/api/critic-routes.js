@@ -2,6 +2,18 @@ const router = require('express').Router();
 const { Critic, Movie, Review, Vote } = require('../../models');
 
 // get all users (critics)
+router.get('/', (req, res) => {
+    Critic.findAll({
+      attributes: { exclude: ['password'] }
+    })
+      .then(dbUserData => res.json(dbUserData))
+      .catch(err => {
+        console.log(err);
+        res.status(500).json(err);
+      });
+  });
+
+// get one user (critic)
 router.get('/:id', (req, res) => {
     Critic.findOne({
         attributes: { exclude: ['password'] },
@@ -40,4 +52,17 @@ router.get('/:id', (req, res) => {
         console.log(err);
         res.status(500).json(err);
       });
+});
+
+router.post('/', (req, res) => {
+    Critic.create({
+        username: req.body.username,
+        email: req.body.email,
+        password: req.body.password
+    })
+    .then(dbUserData => res.json(dbUserData))
+    .catch(err => {
+      console.log(err);
+      res.status(500).json(err);
+    });
 });
