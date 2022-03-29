@@ -1,0 +1,30 @@
+<article>
+    <a href="/dashboard">&larr; Back to dashboard</a>
+    <h2>Edit Movie</h2>
+
+    <form class="edit-movie-form">
+        <div>
+            <input name="movie-title" type="text" value="{{movie.title}}" />
+            <span>
+                ({{movie.movie_url}})
+            </span>
+        </div>
+        <div>
+            {{movie.vote_count}} likes
+        </div>
+        <button type="submit">Save Movie</button>
+        <button type="button" class="delete-post-btn">Delete Movie</button>
+    </form>
+</article>
+
+<form class="review-form">
+    <div>
+        <textarea name="review-body"></textarea>
+    </div>
+
+    <div>
+        <button type="submit">Add Review</button>
+    </div>
+</form>
+
+{{> reviews movie.reviews}}
