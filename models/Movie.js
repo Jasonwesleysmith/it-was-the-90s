@@ -57,7 +57,7 @@ class Movie extends Model {
       sequelize,
       freezeTableName: true,
       underscored: true,
-      modelName: 'Movie'
+      modelName: 'movie'
     }
   );
   
