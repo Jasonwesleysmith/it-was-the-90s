@@ -1,6 +1,7 @@
 const express = require("express");
 const sequelize = require("./config/connection");
 const exphbs = require("express-handlebars");
+const routes = require("./routes");
 
 const app = express();
 const PORT = process.env.PORT || 3001;
@@ -11,6 +12,7 @@ app.engine("handlebars", hbs.engine);
 app.set("view engine", "handlebars");
 
 app.use(express.urlencoded({ extended: false }));
+app.use(routes);
 
 // connect to db and server
 sequelize.sync({ force: false }).then(() => {
