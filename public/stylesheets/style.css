@@ -94,6 +94,24 @@ input {
   padding: 10px 0px;
 }
 
+.create-post-title {
+  display: flex;
+  justify-content: center;
+}
+
+.new-movie-form {
+  display: block;
+  box-shadow: 10px 10px 8px 10px #160449;
+  margin: 30px auto 30px auto;
+  width: 50%;
+  justify-content: center;
+  border: 3px solid;
+  padding: 15px;
+  background: #009FFF;  /* fallback for old browsers */
+  background: -webkit-linear-gradient(to left, #ec2F4B, #009FFF);  /* Chrome 10-25, Safari 5.1-6 */
+  background: linear-gradient(to left, #ec2F4B, #009FFF);
+}
+
 button {
   background-color: rgb(231, 114, 231);
   border: 1px solid black;
@@ -106,4 +124,9 @@ button {
   border-radius: 4px;
   font-weight: bold;
   box-shadow: 2px 2px black;
+}
+
+.movie-post-title {
+  display: flex;
+  justify-content: center;
 }
