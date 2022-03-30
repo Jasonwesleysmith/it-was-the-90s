@@ -60,14 +60,22 @@ router.post("/", (req, res) => {
     email: req.body.email,
     password: req.body.password,
   })
-    .then((dbCriticData) => res.json(dbCriticData))
+    .then((dbCriticData) => {
+      req.session.save(() => {
+        req.session.critic_id = dbCriticData.id;
+        req.session.critic = dbCriticData.critic;
+        req.session.loggedIn = true;
+
+        res.json(dbCriticData);
+      });
+    })
     .catch((err) => {
       console.log(err);
       res.status(500).json(err);
     });
 });
 
-router.post("login", (req, res) => {
+router.post("/login", (req, res) => {
   Critic.findOne({
     where: {
       email: req.body.email,
@@ -85,8 +93,24 @@ router.post("login", (req, res) => {
       return;
     }
 
-    res.json({ user: dbCriticData, message: "You are now logged in!" });
+    req.session.save(() => {
+      req.session.critic_id = dbCriticData.id;
+      req.session.critic = dbCriticData.critic;
+      req.session.loggedIn = true;
+
+      res.json({ user: dbCriticData, message: "You are now logged in!" });
+    });
   });
+});
+
+router.post("/logout", (req, res) => {
+  if (req.session.loggedIn) {
+    req.session.destroy(() => {
+      res.status(204).end();
+    });
+  } else {
+    res.status(400).end();
+  }
 });
 
 router.put("/id:", (req, res) => {

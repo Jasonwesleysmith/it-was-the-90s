@@ -1,6 +1,7 @@
 const router = require("express").Router();
 const sequelize = require("../../config/connection");
 const { Movie, Critic, Review, Vote } = require("../../models");
+const withAuth = require('../../utils/auth');
 
 // get all users
 router.get("/", (req, res) => {
@@ -98,11 +99,11 @@ router.get("/:id", (req, res) => {
     });
 });
 
-router.post("/", (req, res) => {
+router.post("/", withAuth, (req, res) => {
   Movie.create({
     title: req.body.title,
     movie_url: req.body.movie_url,
-    critic_id: req.body.critic_id,
+    critic_id: req.session.critic_id,
   })
     .then((dbMovieData) => res.json(dbMovieData))
     .catch((err) => {
