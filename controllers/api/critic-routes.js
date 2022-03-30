@@ -60,7 +60,15 @@ router.post("/", (req, res) => {
     email: req.body.email,
     password: req.body.password,
   })
-    .then((dbCriticData) => res.json(dbCriticData))
+    .then((dbCriticData) => {
+      req.session.save(() => {
+        req.session.critic_id = dbCriticData.id;
+        req.session.critic = dbCriticData.critic;
+        req.session.loggedIn = true;
+
+        res.json(dbCriticData);
+      });
+    })
     .catch((err) => {
       console.log(err);
       res.status(500).json(err);
