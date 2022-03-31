@@ -19,12 +19,14 @@
 
 <form class="review-form">
     <div>
-        <textarea name="review-body"></textarea>
+        <textarea name="review-body" id="review-body"></textarea>
     </div>
 
     <div>
-        <button type="submit">Add Review</button>
+        <button type="submit" id="review-btn">Add Review</button>
     </div>
 </form>
 
 {{> reviews movie.reviews}}
+
+<script src="/javascript/review.js"></script>
