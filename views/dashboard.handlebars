@@ -14,16 +14,20 @@
   </form>
 </section>
 
+
+
 <section>
-    <h2 class="movie-post-title">Your Movie Posts</h2>
-    <ol>
-        {{#each movies as |movie|}}
-        <li>
-            {{> movie-info movie}}
-            <a href="/dashboard/edit/{{movie.id}}" class="edit-link">Edit Movie Post</a>
-        </li>
-        {{/each}}
-    </ol>
+  
+  <h2 class="movie-post-title">Your Movie Posts</h2>
+  <ol>
+    {{#each movies as |movie|}}
+    <li>
+      {{> movie-info movie}}
+      <a href="/dashboard/edit/{{movie.id}}" class="edit-link">Edit Movie Post</a>
+    </li>
+    {{/each}}
+  </ol>
+
 </section>
 
 <script src="/javascript/add-movie.js"></script>

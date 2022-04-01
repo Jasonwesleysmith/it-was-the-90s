@@ -1,6 +1,16 @@
 {{> movie-info movie }}
 
-<form class="review-form">
+
+
+ <div class="col s12 m7">
+    <h2 class="header">Movie</h2>
+    <div class="card horizontal">
+      <div class="card-image">
+        <img src="../public/stylesheets/d433c815b11b5b1c67adaa6c92a79abb.jpeg">
+      </div>
+      <div class="card-stacked">
+        <div class="card-content">
+          <form class="review-form">
     <div>
         <textarea name="review-body"></textarea>
     </div>
@@ -10,6 +20,13 @@
         <button type="button" class="upvote-btn">Upvote</button>
     </div>
 </form>
+        </div>
+        <div class="card-action">
+          <a href="#">This is a link</a>
+        </div>
+      </div>
+    </div>
+  </div>
 
 {{> reviews movie.reviews}}
 

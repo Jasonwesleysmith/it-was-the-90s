@@ -1,3 +1,4 @@
+
 * {
   margin: 0;
   padding: 0;
@@ -16,6 +17,10 @@ body {
   background: -webkit-linear-gradient(to right, #009fff, #ec2f4b); /* Chrome 10-25, Safari 5.1-6 */
   background: linear-gradient(to right, #009fff, #ec2f4b);
 }
+
+card {
+  background-image: url(./d433c815b11b5b1c67adaa6c92a79abb.jpeg)
+}
 .main-title {
   display: flex;
   justify-content: center;
@@ -26,6 +31,9 @@ body {
 
 header {
   padding: 20px 40px;
+  background-image: url(../stylesheets/d433c815b11b5b1c67adaa6c92a79abb.jpeg);
+  background-repeat: no-repeat;
+  background-size: 100%;
 }
 
 header a {
@@ -113,7 +121,9 @@ input {
 }
 
 button {
-  background-color: rgb(231, 114, 231);
+  background: #C02425;  /* fallback for old browsers */
+  background: -webkit-linear-gradient(to right, #F0CB35, #C02425);  /* Chrome 10-25, Safari 5.1-6 */
+  background: linear-gradient(to right, #F0CB35, #C02425); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
   border: 1px solid black;
   color: white;
   padding: 10px 25px;
@@ -129,4 +139,10 @@ button {
 .movie-post-title {
   display: flex;
   justify-content: center;
+}
+
+movie-post {
+  justify-content: center;
+  align-items: center;
+
 }
