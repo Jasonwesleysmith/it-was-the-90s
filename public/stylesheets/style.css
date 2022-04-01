@@ -1,11 +1,12 @@
+/* @import url('https://fonts.googleapis.com/css2?family=Open+Sans:wght@400;700&family=Quicksand:wght@500&family=Staatliches&display=swap'); */
+@import url('https://fonts.googleapis.com/css2?family=Shrikhand&display=swap');
+
 * {
   margin: 0;
   padding: 0;
   box-sizing: border-box;
-  font-family: 'Quicksand', sans-serif;
+  font-family: 'Shrikhand', cursive;
 }
-
-@import url('https://fonts.googleapis.com/css2?family=Open+Sans:wght@400;700&family=Quicksand:wght@500&family=Staatliches&display=swap');
 
 h1 a {
   text-decoration: none;
@@ -16,6 +17,8 @@ body {
   background: -webkit-linear-gradient(to right, #009fff, #ec2f4b); /* Chrome 10-25, Safari 5.1-6 */
   background: linear-gradient(to right, #009fff, #ec2f4b);
 }
+
+@import url('https://fonts.googleapis.com/css2?family=Shrikhand&display=swap');
 .main-title {
   background-color: #00000093;
   display: flex;
@@ -23,7 +26,10 @@ body {
   font-size: 50px;
   color: rgb(110, 42, 236);
   text-shadow: 0 0 20px #c795f5;
+  font-family: 'shrikhand' sans-serif;
+  
 }
+
 
 header {
   padding: 20px 40px;
@@ -113,14 +119,15 @@ input {
   width: 50%;
   justify-content: center;
   border: 3px solid;
+  border-radius: 5px;
   padding: 15px;
   background: #009FFF;  /* fallback for old browsers */
-  background: -webkit-linear-gradient(to left, #ec2F4B, #009FFF);  /* Chrome 10-25, Safari 5.1-6 */
-  background: linear-gradient(to left, #ec2F4B, #009FFF);
+  background: -webkit-linear-gradient(to right, #ec2F4B, #009FFF);  /* Chrome 10-25, Safari 5.1-6 */
+  background: linear-gradient(to right, #ec2F4B, #009FFF);
 }
 
 button {
-  background-color: rgb(231, 114, 231);
+  background-color: rgba(172, 111, 242, 0.789);
   border: 1px solid black;
   color: white;
   padding: 10px 25px;
@@ -136,6 +143,13 @@ button {
 .movie-post-title {
   display: flex;
   justify-content: center;
+}
+
+.card {
+  /* background-image:url(./images/d433c815b11b5b1c67adaa6c92a79abb.jpg) */
+  border: 3px, solid;
+  border-radius: 5px;
+  background-color: cornsilk;
 }
 
 text {
