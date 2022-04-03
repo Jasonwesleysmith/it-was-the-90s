@@ -12,6 +12,8 @@
           <button type="submit" class="btn">Post</button>
         </form>
     </section> 
+
+    {{#if movies.length}}
     <section>
         <h2 class="movie-post-title">Your Movie Posts</h2>
         
@@ -26,5 +28,7 @@
               </div>
           </ul>       
     </section>
+    {{/if}}
+
     <script src="/javascript/add-movie.js"></script>
  

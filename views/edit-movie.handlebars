@@ -4,16 +4,15 @@
         <div>
             <input name="movie-title" type="text" id="new-movie-title" value="{{movie.title}}" />
             <span>
-                ({{movie.movie_url}})
+                ({{format_url movie.movie_url}})
             </span>
         </div>
         <div>
-            {{movie.vote_count}} likes
+            {{movie.vote_count}} {{format_plural "like" movie.vote_count}}
         </div>
         <button type="submit">Save Movie</button>
-        <button type="button" class="delete-post-btn">Delete Movie</button>
+        <button type="button" class="delete-movie-btn">Delete Movie</button>
     </form>
-
 
 
 <form class="review-form">
