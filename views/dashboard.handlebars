@@ -1,9 +1,5 @@
-<div class="row">
-  <div class="col s8 offset-s2">
-    <section>
+<section>
       <h2 class="create-post-title">Create New Movie Post</h2>
-  
-      
         <form class="new-movie-form">
           <div>
             <label for="movie-title">Movie Title</label>
@@ -15,21 +11,20 @@
           </div>
           <button type="submit" class="btn">Post</button>
         </form>
-      
-    </section>
-  
+    </section> 
     <section>
         <h2 class="movie-post-title">Your Movie Posts</h2>
-        <ul>
-            {{#each movies as |movie|}}
-            <li>
-                {{> movie-info movie}}
-                <a href="/dashboard/edit/{{movie.id}}" class="edit-link">Edit Movie Post</a>
-            </li>
-            {{/each}}
-        </ul>
+        
+          <ul>
+              <div class="card">
+                {{#each movies as |movie|}}
+                  <li>
+                      {{> movie-info movie}}
+                      <a href="/dashboard/edit/{{movie.id}}" class="edit-link">Edit Movie Post</a>
+                  </li>
+                {{/each}}
+              </div>
+          </ul>       
     </section>
-  
     <script src="/javascript/add-movie.js"></script>
-  </div>
-</div>
+ 

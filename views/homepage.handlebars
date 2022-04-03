@@ -1,7 +1,9 @@
 <ul class="movie-list">
-    {{#each movies as |movie|}}
-    <li>
-        {{> movie-info movie }}
-    </li>
-    {{/each}}
+        {{#each movies as |movie|}}
+        <div class="card">
+            <li>
+                {{> movie-info movie }}
+            </li>
+        </div>
+        {{/each}}    
 </ul>

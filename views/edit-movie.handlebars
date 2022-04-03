@@ -1,20 +1,19 @@
+<div class="card">
+    <h2>Edit Movie</h2>
+    <form class="edit-movie-form">
+        <div>
+            <input name="movie-title" type="text" id="new-movie-title" value="{{movie.title}}" />
+            <span>
+                ({{movie.movie_url}})
+            </span>
+        </div>
+        <div>
+            {{movie.vote_count}} likes
+        </div>
+        <button type="submit">Save Movie</button>
+        <button type="button" class="delete-post-btn">Delete Movie</button>
+    </form>
 
-    <div class="card">
-        <h2>Edit Movie</h2>
-        <form class="edit-movie-form">
-            <div>
-                <input name="movie-title" type="text" id="new-movie-title" value="{{movie.title}}" />
-                <span>
-                    ({{movie.movie_url}})
-                </span>
-            </div>
-            <div>
-                {{movie.vote_count}} likes
-            </div>
-            <button type="submit">Save Movie</button>
-            <button type="button" class="delete-post-btn">Delete Movie</button>
-        </form>
-    </div>
 
 
 <form class="review-form">
@@ -28,6 +27,7 @@
 </form>
 
 {{> reviews movie.reviews}}
+</div>
 
 <script src="/javascript/edit-movie.js"></script>
 <script src="/javascript/delete-movie.js"></script>

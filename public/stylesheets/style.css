@@ -168,6 +168,10 @@ button {
   box-shadow: 2px 2px black;
 }
 
+#review-area {
+  background-color: #60c1fe53;
+}
+
 .movie-post-title {
   display: flex;
   justify-content: center;
