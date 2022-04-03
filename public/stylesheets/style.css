@@ -12,8 +12,14 @@ h1 a {
   text-decoration: none;
 }
 
+h2 {
+  justify-content: left;
+  font-size: 36;
+  color: #000000;
+}
+
 h3 {
-  font-size: 24px;
+  font-size: 20px;
   font-weight: bold;
 }
 
@@ -34,9 +40,22 @@ body {
   
 }
 
+#nav-text {
+  color:#000000;
+  font-size: 24px;
 
+}
+
+.nav-wrapper {
+  background-color: none;
+}
+
+.nav-wrapper-text {
+  background-color: whitesmoke;
+}
 header {
-  padding: 20px 40px;
+  background-image: url(./images/90sfilm.jpeg);
+  padding: 20px 0px 0px 0px;
 }
 
 header a {
@@ -193,7 +212,6 @@ button {
 }
 
 .card {
-  /* background-image: url(../stylesheets/images/ab67616d0000b273521511091496fabcadcf791f.jpg); */
   background-color: #009dff85;
   font-size: 22px;
   margin: 12 20 12 20;
@@ -217,8 +235,3 @@ text {
   color:#000000
 }
 
-/* @media screen and (max-width: 980px) {
-  * {
-    background-color: whitesmoke;
-  }
-} */
