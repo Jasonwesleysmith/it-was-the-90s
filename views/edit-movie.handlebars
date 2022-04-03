@@ -1,10 +1,8 @@
-<article>
-    <a href="/dashboard">&larr; Back to dashboard</a>
+<div class="card">
     <h2>Edit Movie</h2>
-
     <form class="edit-movie-form">
         <div>
-            <input name="movie-title" type="text" value="{{movie.title}}" />
+            <input name="movie-title" type="text" id="new-movie-title" value="{{movie.title}}" />
             <span>
                 ({{movie.movie_url}})
             </span>
@@ -15,7 +13,8 @@
         <button type="submit">Save Movie</button>
         <button type="button" class="delete-post-btn">Delete Movie</button>
     </form>
-</article>
+
+
 
 <form class="review-form">
     <div>
@@ -28,5 +27,8 @@
 </form>
 
 {{> reviews movie.reviews}}
+</div>
 
+<script src="/javascript/edit-movie.js"></script>
+<script src="/javascript/delete-movie.js"></script>
 <script src="/javascript/review.js"></script>

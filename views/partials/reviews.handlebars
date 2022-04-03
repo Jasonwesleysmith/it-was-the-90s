@@ -1,12 +1,13 @@
 <div class="reviews">
   {{#each this}}
-    <section class="review">
-      <div>
-        <p>Review by {{critic.id}} on {{created_at}}</p>
-      </div>
-      <div>
-        <p>{{review_text}}</p>
-      </div>
-    </section>
+  <section class="review">
+    <div>
+      <p>Review by {{critic.id}} on {{created_at}}</p>
+    </div>
+    <div>
+      <p>{{review_text}}</p>
+    </div>
+  </section>
   {{/each}}
 </div>
+<a id="dashboard-return" href="/dashboard">&larr; Back to dashboard</a>

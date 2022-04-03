@@ -1,14 +1,26 @@
+/* @import url('https://fonts.googleapis.com/css2?family=Open+Sans:wght@400;700&family=Quicksand:wght@500&family=Staatliches&display=swap'); */
+@import url('https://fonts.googleapis.com/css2?family=Shrikhand&display=swap');
+
 * {
   margin: 0;
   padding: 0;
   box-sizing: border-box;
-  font-family: 'Quicksand', sans-serif;
+  font-family: 'Shrikhand', cursive;
 }
-
-@import url('https://fonts.googleapis.com/css2?family=Open+Sans:wght@400;700&family=Quicksand:wght@500&family=Staatliches&display=swap');
 
 h1 a {
   text-decoration: none;
+}
+
+h2 {
+  justify-content: left;
+  font-size: 36;
+  color: #000000;
+}
+
+h3 {
+  font-size: 20px;
+  font-weight: bold;
 }
 
 body {
@@ -16,16 +28,34 @@ body {
   background: -webkit-linear-gradient(to right, #009fff, #ec2f4b); /* Chrome 10-25, Safari 5.1-6 */
   background: linear-gradient(to right, #009fff, #ec2f4b);
 }
+
 .main-title {
+  background-color: #00000093;
   display: flex;
   justify-content: center;
   font-size: 50px;
   color: rgb(110, 42, 236);
   text-shadow: 0 0 20px #c795f5;
+  font-family: 'shrikhand' sans-serif;
+  
 }
 
+#nav-text {
+  color:#000000;
+  font-size: 24px;
+
+}
+
+.nav-wrapper {
+  background-color: none;
+}
+
+.nav-wrapper-text {
+  background-color: whitesmoke;
+}
 header {
-  padding: 20px 40px;
+  background-image: url(./images/90sfilm.jpeg);
+  padding: 20px 0px 0px 0px;
 }
 
 header a {
@@ -46,14 +76,27 @@ header nav ul li a {
   font-size: 23px;
 }
 
-/*video {
-  object-fit: cover;
-  height: 100%;
-  width: 100%;
-  position: absolute;
-  top: 0;
+nav {
+  background-color: transparent;
+  box-shadow: none;
+}
+
+footer {
+  
+  color: #009FFF;
+  padding-top: 8px;
+  background-color: #00000056;
+  display: block;
+  position: fixed;
+  bottom: 0;
   left: 0;
-}*/
+  right: 0;
+  height: 40px;
+  width: 100%;
+  border-top: 1px solid white;
+  display: flex;
+  justify-content: center;
+}
 
 .login-container {
   display: block;
@@ -100,33 +143,95 @@ input {
 }
 
 .new-movie-form {
+  color: #000000;
   display: block;
-  box-shadow: 10px 10px 8px 10px #160449;
+  box-shadow: 10px 10px 8px 10px #160449c1;
   margin: 30px auto 30px auto;
   width: 50%;
   justify-content: center;
   border: 3px solid;
+  border-radius: 5px;
   padding: 15px;
   background: #009FFF;  /* fallback for old browsers */
-  background: -webkit-linear-gradient(to left, #ec2F4B, #009FFF);  /* Chrome 10-25, Safari 5.1-6 */
-  background: linear-gradient(to left, #ec2F4B, #009FFF);
+  background: -webkit-linear-gradient(to right, #ec2F4B, #009FFF);  /* Chrome 10-25, Safari 5.1-6 */
+  background: linear-gradient(to right, #ec2F4B, #009FFF);
 }
 
 button {
-  background-color: rgb(231, 114, 231);
+  background-color: #009FFF;
   border: 1px solid black;
   color: white;
   padding: 10px 25px;
   text-align: center;
   text-decoration: none;
   display: inline-block;
-  font-size: 13px;
+  font-family: 'Shrikhand', cursive;
+  font-size: 16px;
   border-radius: 4px;
   font-weight: bold;
   box-shadow: 2px 2px black;
+}
+
+#review-btn {
+  background-color: #009FFF;
+  border: 1px solid black;
+  color: white;
+  padding: 10px 25px;
+  text-align: center;
+  text-decoration: none;
+  display: inline-block;
+  font-family: 'Shrikhand', cursive;
+  font-size: 16px;
+  border-radius: 4px;
+  font-weight: bold;
+  box-shadow: 2px 2px black;
+}
+
+#review-area {
+  background-color: #60c1fe53;
 }
 
 .movie-post-title {
   display: flex;
   justify-content: center;
 }
+
+#movieurl {
+  color: #000000;
+  font-size: 18px;
+}
+
+#reviews-link {
+  color: #000000;
+  font-size: 18px;
+}
+
+.edit-link {
+  color: #000000;
+  font-size: 18px;
+}
+
+.card {
+  background-color: #009dff85;
+  font-size: 22px;
+  margin: 12 20 12 20;
+  border: 5px, solid;
+  border-color: #000000;
+  border-radius: 8px;
+  
+}
+
+.card-title {
+  font-size: 24px;
+}
+
+#dashboard-return {
+  font-size: 24px;
+  font-weight: bold;
+  color: #000000;
+}
+
+text {
+  color:#000000
+}
+

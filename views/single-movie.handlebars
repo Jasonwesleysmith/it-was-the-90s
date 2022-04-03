@@ -1,16 +1,25 @@
-{{> movie-info movie }}
-
-<form class="review-form">
-    <div>
-        <textarea name="review-body"></textarea>
+<div class="row">
+    <div class="col s8 offset-s2">
+        <div class="card">
+            {{> movie-info movie }}
+            
+            <form class="review-form">
+            
+                    <div>
+                        <textarea id="review-area" name="review-body"></textarea>
+                    </div>
+            
+            
+                <div>
+                    <button type="submit">Add Review</button>
+                    <button type="button" class="upvote-btn">Upvote</button>
+                </div>
+            </form>
+            
+            {{> reviews movie.reviews}}
+        
     </div>
+</div>
 
-    <div>
-        <button type="submit">Add Review</button>
-        <button type="button" class="upvote-btn">Upvote</button>
-    </div>
-</form>
-
-{{> reviews movie.reviews}}
-
+<script src="/javascript/review.js"></script>
 <script src="/javascript/upvote.js"></script>

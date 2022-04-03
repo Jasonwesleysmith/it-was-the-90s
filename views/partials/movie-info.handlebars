@@ -1,10 +1,13 @@
-<article class="movie-post">
-  <div class="title">
-    <h3>{{title}}</h3>
-    <span>{{movie_url}}</span>
-  </div>
-  <div>
-    <p>{{vote_count}} people like this movie.</p>
-    <p>{{reviews.length}} reviews</p>
-  </div>
-</article>
+
+    
+      <h3 class="card-title">{{title}}</h3>
+        <div class="card-content">
+          <a id="movieurl" href="{{movie_url}}" target="_blank">{{movie_url}}</a>
+          <p>{{vote_count}} people like this movie.</p>
+          <a id="reviews-link" href="/movie/{{id}}">
+              {{reviews.length}}
+              review(s)
+          </a>
+    
+      
+ 

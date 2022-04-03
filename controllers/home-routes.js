@@ -82,12 +82,12 @@ router.get("/movie/:id", (req, res) => {
         ],
         include: {
           model: Critic,
-          attributes: ["username"],
+          attributes: ["critic"],
         },
       },
       {
         model: Critic,
-        attributes: ["username"],
+        attributes: ["critic"],
       },
     ],
   })

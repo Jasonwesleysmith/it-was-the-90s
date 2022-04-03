@@ -1,7 +1,7 @@
 const router = require("express").Router();
 const sequelize = require("../../config/connection");
 const { Movie, Critic, Review, Vote } = require("../../models");
-const withAuth = require('../../utils/auth');
+const withAuth = require("../../utils/auth");
 
 // get all users
 router.get("/", (req, res) => {
@@ -88,7 +88,7 @@ router.get("/:id", (req, res) => {
   })
     .then((dbMovieData) => {
       if (!dbMovieData) {
-        res.status(404).json({ message: "No post found with this id" });
+        res.status(404).json({ message: "No movie found with this id" });
         return;
       }
       res.json(dbMovieData);
@@ -113,7 +113,10 @@ router.post("/", withAuth, (req, res) => {
 });
 
 router.put("/upvote", (req, res) => {
-  Movie.upvote(req.body, { Vote, Review, Critic })
+  Movie.upvote(
+    { ...req.body, critic_id: req.session.critic_id },
+    { Vote, Review, Critic }
+  )
     .then((updatedVoteData) => res.json(updatedVoteData))
     .catch((err) => {
       console.log(err);
