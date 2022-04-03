@@ -25,7 +25,7 @@
 
 # TECHNOLOGIES utilized: HTML, CSS, JavaScript, Node.js, Express.js, MySQL, Inquirer, JawsDB, Handlebars, Materilaize Heroku
 
-### Github repository: 
+### Github repository: https://github.com/Jasonwesleysmith/it-was-the-90s
 ### Deployed Heroku Link: https://itwasthe90s.herokuapp.com
 
 ![Screen Shot 2022-04-03 at 4 08 22 AM](https://user-images.githubusercontent.com/95160092/161420436-51faf254-0d9d-478b-87ef-ff915c4edb01.png)
