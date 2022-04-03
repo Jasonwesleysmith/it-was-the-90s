@@ -12,6 +12,11 @@ h1 a {
   text-decoration: none;
 }
 
+h3 {
+  font-size: 24px;
+  font-weight: bold;
+}
+
 body {
   background: #009fff; /* fallback for old browsers */
   background: -webkit-linear-gradient(to right, #009fff, #ec2f4b); /* Chrome 10-25, Safari 5.1-6 */
@@ -58,9 +63,7 @@ nav {
 }
 
 footer {
-  /* margin-bottom: 20px;
-  font-size: 18px;
-  font-weight: bold; */
+  
   color: #009FFF;
   padding-top: 8px;
   background-color: #00000056;
@@ -69,7 +72,7 @@ footer {
   bottom: 0;
   left: 0;
   right: 0;
-  height: 50px;
+  height: 40px;
   width: 100%;
   border-top: 1px solid white;
   display: flex;
@@ -170,6 +173,16 @@ button {
   justify-content: center;
 }
 
+#movieurl {
+  color: #000000;
+  font-size: 18px;
+}
+
+#reviews-link {
+  color: #000000;
+  font-size: 18px;
+}
+
 .card {
   background-image: url(../stylesheets/images/ab67616d0000b273521511091496fabcadcf791f.jpg);
   font-size: 22px;
@@ -177,6 +190,10 @@ button {
   border: 3px, solid;
   border-radius: 8px;
   background-color: cornsilk;
+}
+
+.card-title {
+  font-size: 24px;
 }
 
 #dashboard-return {
@@ -188,3 +205,9 @@ button {
 text {
   color:#000000
 }
+
+/* @media screen and (max-width: 980px) {
+  * {
+    background-color: whitesmoke;
+  }
+} */
