@@ -143,7 +143,23 @@ button {
   text-align: center;
   text-decoration: none;
   display: inline-block;
-  font-size: 13px;
+  font-family: 'Shrikhand', cursive;
+  font-size: 16px;
+  border-radius: 4px;
+  font-weight: bold;
+  box-shadow: 2px 2px black;
+}
+
+#review-btn {
+  background-color: #009FFF;
+  border: 1px solid black;
+  color: white;
+  padding: 10px 25px;
+  text-align: center;
+  text-decoration: none;
+  display: inline-block;
+  font-family: 'Shrikhand', cursive;
+  font-size: 16px;
   border-radius: 4px;
   font-weight: bold;
   box-shadow: 2px 2px black;
@@ -155,11 +171,18 @@ button {
 }
 
 .card {
-  /* background-image:url(./images/d433c815b11b5b1c67adaa6c92a79abb.jpg) */
+  background-image: url(../stylesheets/images/ab67616d0000b273521511091496fabcadcf791f.jpg);
+  font-size: 22px;
   margin: 12 20 12 20;
   border: 3px, solid;
-  border-radius: 5px;
+  border-radius: 8px;
   background-color: cornsilk;
+}
+
+#dashboard-return {
+  font-size: 24px;
+  font-weight: bold;
+  color: #000000;
 }
 
 text {
