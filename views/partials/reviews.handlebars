@@ -1,8 +1,8 @@
 <div class="reviews">
   {{#each this}}
-    <section class="review">
+    <section class="card review">
       <div>
-        <p>Review by {{critic.id}} on {{format_date created_at}}</p>
+        <p>Review by {{critic.critic}} on {{format_date created_at}}</p>
       </div>
       <div>
         <p>{{review_text}}</p>
