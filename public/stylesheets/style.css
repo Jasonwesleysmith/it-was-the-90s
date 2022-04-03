@@ -126,7 +126,7 @@ input {
 .new-movie-form {
   color: #000000;
   display: block;
-  box-shadow: 10px 10px 8px 10px #160449;
+  box-shadow: 10px 10px 8px 10px #160449c1;
   margin: 30px auto 30px auto;
   width: 50%;
   justify-content: center;
@@ -183,13 +183,20 @@ button {
   font-size: 18px;
 }
 
+.edit-link {
+  color: #000000;
+  font-size: 18px;
+}
+
 .card {
-  background-image: url(../stylesheets/images/ab67616d0000b273521511091496fabcadcf791f.jpg);
+  /* background-image: url(../stylesheets/images/ab67616d0000b273521511091496fabcadcf791f.jpg); */
+  background-color: #009dff85;
   font-size: 22px;
   margin: 12 20 12 20;
-  border: 3px, solid;
+  border: 5px, solid;
+  border-color: #000000;
   border-radius: 8px;
-  background-color: cornsilk;
+  
 }
 
 .card-title {
