@@ -2,7 +2,7 @@ async function reviewFormHandler(event) {
   event.preventDefault();
 
   const review_text = document.querySelector("#review-body").value.trim();
-  const review_id = window.location.toString().split("/")[
+  const movie_id = window.location.toString().split("/")[
     window.location.toString().split("/").length - 1
   ];
   console.log(review_text);
@@ -10,7 +10,7 @@ async function reviewFormHandler(event) {
     const response = await fetch("/api/reviews", {
       method: "POST",
       body: JSON.stringify({
-        review_id,
+        movie_id,
         review_text,
       }),
       headers: {
@@ -19,7 +19,7 @@ async function reviewFormHandler(event) {
     });
 
     if (response.ok) {
-      //      document.location.reload();
+      document.location.reload();
     } else {
       alert(response.statusText);
     }

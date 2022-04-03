@@ -4,7 +4,7 @@
 
     <form class="edit-movie-form card">
         <div>
-            <input name="movie-title" type="text" value="{{movie.title}}" />
+            <input name="movie-title" type="text" id="new-movie-title" value="{{movie.title}}" />
             <span>
                 ({{movie.movie_url}})
             </span>
@@ -29,4 +29,6 @@
 
 {{> reviews movie.reviews}}
 
+<script src="/javascript/edit-movie.js"></script>
+<script src="/javascript/delete-movie.js"></script>
 <script src="/javascript/review.js"></script>

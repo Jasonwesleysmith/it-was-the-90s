@@ -70,12 +70,12 @@ router.get("/:id", (req, res) => {
         attributes: ["id", "review_text", "movie_id", "user_id", "created_at"],
         include: {
           model: Critic,
-          attributes: ["username"],
+          attributes: ["critic"],
         },
       },
       {
         model: Critic,
-        attributes: ["username"],
+        attributes: ["critic"],
       },
     ],
   })

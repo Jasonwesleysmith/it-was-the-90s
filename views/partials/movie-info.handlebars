@@ -3,11 +3,26 @@
     <h3 class="card-title">{{title}}</h3>
     {{!-- Opens in new tab --}}
     <a href="{{movie_url}}" target="_blank">{{movie_url}}</a>
-    <div>
+    {{!-- <div>
       <p>{{vote_count}} people like this movie.</p>
       <p>{{reviews.length}} reviews</p>
-    </div>
+    </div> --}}
+    {{!-- <div> --}}
+    <p>{{vote_count}} people like this movie.</p>
+    <p>{{reviews.length}} reviews</p>
+    <a href="/movie/{{id}}">
+      {{reviews.length}}
+      review(s)
+    </a>
   </div>
+
+  {{!-- </div>
+  <div>
+    <p>{{vote_count}} people like this movie.</p>
+    <p>{{reviews.length}} reviews</p>
+    <a href="/movie/{{id}}">
+      {{reviews.length}}
+      review(s)
+    </a>
+  </div> --}}
 </article>
-
-
