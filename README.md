@@ -29,6 +29,10 @@
 ### Github repository: https://github.com/Jasonwesleysmith/it-was-the-90s
 ### Deployed Heroku Link: https://itwasthe90s.herokuapp.com
 
-![Screen Shot 2022-04-03 at 4 08 22 AM](https://user-images.githubusercontent.com/95160092/161420436-51faf254-0d9d-478b-87ef-ff915c4edb01.png)
-![Screen Shot 2022-04-03 at 4 08 04 AM](https://user-images.githubusercontent.com/95160092/161420437-acf72987-6958-4ac4-868a-dc450be354f3.png)
-![Screen Shot 2022-04-03 at 4 08 36 AM](https://user-images.githubusercontent.com/95160092/161420440-1af8fd84-6762-4996-a20e-a98e6ac19d78.png)
+![Screen Shot 2022-04-03 at 8 56 22 PM](https://user-images.githubusercontent.com/95160092/161461782-cac3c1ed-2ed3-42f9-8dd3-1ff2e2b39338.png)
+
+![Screen Shot 2022-04-03 at 8 56 38 PM](https://user-images.githubusercontent.com/95160092/161461803-40b2e02d-65a3-414c-8327-90a8f54eb657.png)
+
+![Screen Shot 2022-04-03 at 8 56 49 PM](https://user-images.githubusercontent.com/95160092/161461823-9e3054d0-3390-4e33-a847-3232af0885b3.png)
+
+![Screen Shot 2022-04-03 at 8 57 18 PM](https://user-images.githubusercontent.com/95160092/161461842-8f1b3994-6c86-413c-8aff-0bb12156f814.png)
