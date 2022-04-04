@@ -12,13 +12,15 @@
           <button type="submit" class="btn">Post</button>
         </form>
     </section> 
+
+    {{#if movies.length}}
     <section>
         <h2 class="movie-post-title">Your Movie Posts</h2>
         
           <ul>
-              <div class="card">
+              <div>
                 {{#each movies as |movie|}}
-                  <li>
+                  <li class="card">
                       {{> movie-info movie}}
                       <a href="/dashboard/edit/{{movie.id}}" class="edit-link">Edit Movie Post</a>
                   </li>
@@ -26,5 +28,7 @@
               </div>
           </ul>       
     </section>
+    {{/if}}
+
     <script src="/javascript/add-movie.js"></script>
  
